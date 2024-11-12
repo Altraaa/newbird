@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-yellow-100 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-yellow-400 fixed w-full p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-black text-2xl font-bold ml-24">New Birdh Coffee</h1>
+      
+      <!-- Burger Icon for Mobile -->
+      <button id="burger-menu" class="block md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav id="nav-links" class="hidden md:flex space-x-4 mr-24">
+        <a href="#home" class="text-black-200 hover:text-white">Home</a>
+        <a href="#menu" class="text-black-200 hover:text-white">Menu</a>
+        <a href="#about" class="text-black-200 hover:text-white">About</a>
+        <a href="#contact" class="text-black-200 hover:text-white">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="md:hidden hidden flex flex-col space-y-2 mt-4 px-4">
+      <a href="#home" class="text-gray-200 hover:text-white">Home</a>
+      <a href="#menu" class="text-gray-200 hover:text-white">Menu</a>
+      <a href="#about" class="text-gray-200 hover:text-white">About</a>
+      <a href="#contact" class="text-gray-200 hover:text-white">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://source.unsplash.com/featured/?coffee')">
+    <div class="text-center text-white p-8 bg-opacity-50 bg-black rounded-lg">
+      <h2 class="text-4xl font-semibold ">Welcome to <span class="text-yellow-200">New Birdh Coffee</span> </h2>
+      <p class="mt-4 text-lg">Kopi terbaik di kota, baru diseduh hanya untuk Anda.</p>
+      <a href="#menu" class="mt-6 inline-block px-6 py-2 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-600 hover:text-white">Jelajahi Menu Kami</a>
+      <img src="foto/nb logo.jpg" alt="" class="w-32 h-32 rounded-full mx-auto mt-8 md:ml-44 md:justify-center md:flex md:items-center">
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-12 mt">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8 mt-16">Menu Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Menu Item -->
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl font-semibold">Espresso</h3>
+          <p class="mt-2 text-gray-600">Minuman espresso yang kaya dan beraroma.</p>
+          <span class="mt-4 block text-lg font-bold">18K</span>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl font-semibold">Cappuccino</h3>
+          <p class="mt-2 text-gray-600">Halus dan lembut dengan susu kukus.</p>
+          <span class="mt-4 block text-lg font-bold">23K</span>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+          <h3 class="text-xl font-semibold">Latte</h3>
+          <p class="mt-2 text-gray-600">Perpaduan sempurna antara kopi dan susu.</p>
+          <span class="mt-4 block text-lg font-bold">22K</span>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto mt-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Menu Item -->
+          <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-semibold">Classic Chocolate</h3>
+            <p class="mt-2 text-gray-600">Perpaduan sempurna antara cokelat kaya dan creamy, menghadirkan rasa lembut yang memanjakan di setiap tegukan.</p>
+            <span class="mt-4 block text-lg font-bold">20K</span>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+            <h3 class="text-xl font-semibold">Cappuccino</h3>
+            <p class="mt-2 text-gray-600">Smooth and creamy with steamed milk.</p>
+            <span class="mt-4 block text-lg font-bold">$4.50</span>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow-lg [text-center">
+            <h3 class="text-xl font-semibold">Latte</h3>
+            <p class="mt-2 text-gray-600">Perfect blend of coffee and milk.</p>
+            <span class="mt-4 block text-lg font-bold">$5.00</span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-gray-200 mt-64">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center lg:space-x-8 px-4 lg:px-0">
+      
+      <!-- Image Section -->
+      <div class="lg:w-1/2 w-full mb-8 lg:mb-0">
+        <img src="foto/nb .jpg" alt="Kedai Kopi" class="rounded-lg shadow-lg w-full h-auto">
+      </div>
+      
+      <!-- Text Section -->
+      <div class="lg:w-1/2 text-center lg:text-left">
+        <h2 class="text-4xl font-bold mb-6 text-gray-800">Tentang Kita</h2>
+        <p class="text-lg text-gray-700 max-w-xl mx-auto lg:mx-0 mb-6 leading-relaxed">
+          Kedai kopi kami berkomitmen untuk menghadirkan kopi segar dengan fokus pada <span class="text-gray-800 font-semibold">keberlanjutan</span> dan <span class="text-gray-800 font-semibold">kualitas</span>. 
+          Kami mendapatkan biji kopi kami langsung dari petani dan memanggangnya sendiri untuk memberi Anda pengalaman kopi terbaik.
+        </p>
+        <p class="text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+          Setiap cangkir yang kami sajikan tidak hanya tentang rasa, tetapi juga cerita. Dari perkebunan hingga menjadi secangkir kopi, kami menjaga proses ini agar tetap 
+          ramah lingkungan dan mendukung <span class="text-gray-800 font-semibold">komunitas lokal</span>.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+
+  <!-- Contact Section -->
+  <!-- Contact Section with WhatsApp Links -->
+<section id="contact" class="py-12 bg-gray-100 ">
+  <div class="container mx-auto text-center mt-6">
+    <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Us</h2>
+    <p class="text-gray-700 mb-6">Kami ingin sekali mendengar dari Anda! Baik itu masukan atau pertanyaan, jangan ragu untuk menghubungi kami.<p>
+    
+    <!-- Contact Form -->
+    <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-6 shadow-lg rounded-lg">
+      <div class="mb-4">
+        <input type="text" name="name" placeholder="Nama Kamu" class="w-full p-3 border rounded focus:outline-none focus:ring focus:ring-gray-300">
+      </div>
+      <div class="mb-4">
+        <input type="email" name="email" placeholder="Email Kamu" class="w-full p-3 border rounded focus:outline-none focus:ring focus:ring-gray-300">
+      </div>
+      <div class="mb-4">
+        <textarea name="message" placeholder="Pesan Kamu" class="w-full p-3 border rounded h-32 focus:outline-none focus:ring focus:ring-gray-300"></textarea>
+      </div>
+      <button type="submit" class="bg-gray-800 text-white py-2 px-6 rounded hover:bg-gray-700 transition-colors duration-200">
+        Send Message
+      </button>
+    </form>
+
+    <!-- WhatsApp Contacts Section -->
+    <div class="flex justify-center space-x-6 mt-8">
+      <a href="https://wa.me/6281234567890" target="_blank" class="text-gray-600 hover:text-gray-800 transition-colors duration-200">
+        <img src="foto/wa logo.jpg" alt="" class="w-14 h-14 rounded-full">
+      <a href="https://www.instagram.com/newbirthcoffee_bali?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gray-600 hover:text-gray-800 transition-colors duration-200">
+        <img src="foto/ig logo.jpeg" alt="" class="w-14 h-14 rounded-full">
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-black py-4 w-full">
+    <div class="flex flex-col md:flex-row justify-between items-center w-full mt-6">
+        <iframe
+            class="w-full md:w-64 h-64 mb-4 md:mb-0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.464547913671!2d115.23421668468794!3d-8.672974988550163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240c00b6f077f%3A0x7c7b614e6f16513d!2sJl.%20Narakusuma%20No.54%2C%20Sumerta%20Kelod%2C%20Kec.%20Denpasar%20Tim.%2C%20Kota%20Denpasar%2C%20Bali%2080235!5e0!3m2!1sen!2sus!4v1616580711655!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+        <div class="text-white text-center md:text-left md:ml-6">
+            <ul>
+                <li class="mt-2">Alamat : Jl. Narakusuma No.54, Sumerta Kelod, Kec. Denpasar Tim <br>Kota Denpasar, Bali 80235</li>
+                <li class="mt-2">No Telp : +6281234567890</li>
+                <li class="mt-2">Email : 8yN5M@example.com</li>
+                <li class="mt-2">Instagram : @newbirthcoffee_bali</li>
+            </ul>
+        </div>
+    </div>  
+    <div class="container mx-auto text-center text-white mt-4">
+        <p>&copy; 2024 New Birth Coffee. All rights reserved.</p>
+    </div>
+</footer>
+
+
+  <!-- JavaScript for Burger Menu -->
+  <script>
+    const burgerMenu = document.getElementById('burger-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    burgerMenu.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
